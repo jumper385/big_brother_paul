@@ -4,12 +4,19 @@ services:
         build: ./web
         ports: 
             - "8080:3000"
+        expose:
+            - 3000
         volumes:
             - "./web/src:/app/src"
         restart: unless-stopped
         networks:
             - default
+    
+    proxy:
+        build: ./nginx
+        restart: unless-stopped
+        ports:
+            - "5050:80"
 
 volumes:
     proxy:
-        
