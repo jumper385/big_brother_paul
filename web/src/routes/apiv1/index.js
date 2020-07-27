@@ -1,4 +1,4 @@
-export const get = (req,res) => {
+export function get(req,res){
 
     // A function that runs every time you hit this endpoint
     const sampleEmoji = () => {
@@ -17,7 +17,7 @@ export const get = (req,res) => {
     });
 };
 
-export const post = (req,res) => {
+export function post(req,res){
     // return the request body
     res.json({
         message: `POST request`,
@@ -25,10 +25,10 @@ export const post = (req,res) => {
     });
 };
 
-export const put = (req,res) => {
+export function put(req,res){
     // return the request body
     res.json({
         message: `PUT request`,
         payload: req.body
     });
-}
+};
