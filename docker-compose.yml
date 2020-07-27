@@ -2,7 +2,14 @@ version: "3.0"
 services:
     web:
         build: ./web
-        expose: 3000
-        volumes: 
+        ports: 
+            - "8080:3000"
+        volumes:
             - "./web/src:/app/src"
         restart: unless-stopped
+        networks:
+            - default
+
+volumes:
+    proxy:
+        
