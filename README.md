@@ -1,4 +1,4 @@
-# Hi Carmen! Here's some documentation to help u get started
+# Hello World
 Welcome to the EWB Rmote Monitoring System Project. This will be the code required to build and test the webserver. Documentation will be provided below. Right now, the API will be deployed on a webserver hosted by Linode. 
 
 # Getting Started
