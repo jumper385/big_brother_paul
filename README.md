@@ -6,3 +6,6 @@ Welcome to the EWB Rmote Monitoring System Project. This will be the code requir
 2. In the `web` directory, type `npm install` to install the nessesary files
 3. To run a local development server, type `npm run dev` - this should let you test your work
 4. To edit the API, got to `./src/routes/apiv1` and follow documentation presented on the sapper/svelte website
+
+# Does it work
+git pushing? idk
