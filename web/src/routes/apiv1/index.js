@@ -1,4 +1,7 @@
-export function get(req,res){
+import {postCollection} from '../../mongoosehelpers'
+import { Datapoint } from '../../dbConfigs/schemas/datapoint';
+
+export async function get(req,res){
 
     // A function that runs every time you hit this endpoint
     const sampleEmoji = () => {
@@ -13,8 +16,9 @@ export function get(req,res){
         payload: {
             timestamp: new Date(),
             random_emoji: sampleEmoji()
-        }
+        },
     });
+
 };
 
 export function post(req,res){
