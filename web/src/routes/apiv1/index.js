@@ -32,3 +32,13 @@ export function put(req,res){
         payload: req.body
     });
 };
+
+export function del(req,res){
+    //
+    res.json({
+        message: 'DEL request',
+        payload: req.body,
+        field: Math.floor(Math.random() * 100)
+    }
+    );
+}
